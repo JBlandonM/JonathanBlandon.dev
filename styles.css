@@ -1,5 +1,3 @@
-
-
 body {
     font-family: cursive;
     margin: 0px;
@@ -61,7 +59,7 @@ h1 {
     align-items: center;
     margin-block-start: 50px;
     font-size: large;
-    }
+}
 
 #header-container h1:hover {
 
@@ -83,6 +81,7 @@ h1 {
     color: grey;
     /* box-shadow: 0 5px 4px rgba(26, 25, 25, 0.548) ; */
 }
+
 /* Second Page */
 #secondPage {
     color: white;
