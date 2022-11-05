@@ -1,5 +1,7 @@
+
+
 body {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: cursive;
     margin: 0px;
     scroll-behavior: smooth;
 
@@ -16,30 +18,32 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    color: black;
+    background-color: #89BD9E;
+    color: #F0C987;
 }
 
-.container {    
-    width: 100%;
-    height: 100vh;
+.container {
+    inline-size: 100%;
+    block-size: 84vh;
 }
 
 #mainPage #nav-bar-container {
-    width: 100%;
-    height: 30%;
-    padding-top: 25px;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-#mainPage #header-container {
-    width: 100%;
-    height: 55%;
+    inline-size: 100%;
+    /* block-size:; */
+    /* padding-block-start: 25px; */
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#mainPage #header-container {
+    width: 95%;
+    height: 55%;
+    margin-inline: 2.5%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    /* margin-block: 20%; */
 
 }
 
@@ -51,14 +55,17 @@ h1 {
 }
 
 #mainPage h1 {
-    color: black;
+    color: #faf1e2;
     text-align: center;
-    font-size: 37px;
-}
+    font-size: 18px;
+    align-items: center;
+    margin-block-start: 50px;
+    font-size: large;
+    }
 
 #header-container h1:hover {
 
-    text-shadow: 0 5px 4px rgba(26, 25, 25, 0.548);
+    text-shadow: 0 5px 4px rgba(116, 110, 110, 0.548);
 }
 
 #mainPage #nav-bar-container .button-link {
@@ -66,7 +73,9 @@ h1 {
     height: 10%;
     border-radius: 14px;
     text-decoration: none;
-    color: black
+    color: #faf1e2;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration-style: double;
 }
 
 #mainPage #nav-bar-container .button-link:hover {
@@ -74,7 +83,7 @@ h1 {
     color: grey;
     /* box-shadow: 0 5px 4px rgba(26, 25, 25, 0.548) ; */
 }
-
+/* Second Page */
 #secondPage {
     color: white;
     display: flex;
@@ -112,19 +121,20 @@ h1 {
     transition: border 100ms ease-in-out;
 
 }
-#secondPage #project-one{
-    background-image:linear-gradient(to bottom right, red, blue, white);
+
+#secondPage #project-one {
+    background-image: linear-gradient(to bottom right, red, blue, white);
 
 
 
-    
+
 }
 
-#secondPage #project-two{
+#secondPage #project-two {
     background-image: radial-gradient(circle 200px at top, black, yellow, white);
 }
 
-#secondPage #project-three{
+#secondPage #project-three {
     background-image: conic-gradient(from 90deg at center, green, purple, pink);
 
 }
@@ -151,18 +161,17 @@ h1 {
 
 }
 
-.Skill {
+.skill {
     margin: 15px;
 }
 
+.six {
+    border-radius: 16px;
+}
 
 #thirdPage .container img:hover {
     border-radius: 16px;
     box-shadow: 5px 5px 5px grey;
-}
-
-.Skill-six {
-    border-radius: 16px;
 }
 
 
@@ -180,7 +189,7 @@ footer span {
     color: black;
     text-align: center;
     place-content: center;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -192,8 +201,6 @@ footer span {
 }
 
 #social-media a img {
-    width: 30px;
-    height: 30px;
     border-radius: 15%;
 }
 
@@ -203,3 +210,68 @@ footer span {
     height: 35px;
     box-shadow: 0 5px 5px black;
 }
+
+#test-image-border {
+    inline-size: 100px;
+    block-size: 100px;
+    border: 10px solid black;
+    border-radius: 20%;
+    border-image-width: 10px;
+    border-image-source: linear-gradient(to bottom right, red, blue, white);
+    border-image-slice: 25%;
+}
+
+#contact h2 {
+    margin: 10px 22px;
+
+}
+
+#contact #contact-container {
+    height: 300px;
+    inline-size: 350px;
+    /* padding-bottom: 10px;
+    padding-inline: 10px; */
+    margin: 0 auto;
+
+
+}
+
+/* i added styles to the contact area in mobile devices */
+#contact #contact-container form {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto 0;
+
+
+
+}
+
+@media(max-width:1366px) and (min-width:800px) {
+
+    #secondPage .projects {
+        inline-size: 70%;
+
+    }
+
+    #thirdPage .container {
+        inline-size: 70%;
+        justify-content: space-evenly;
+        margin-inline-start: 15%;
+        margin-inline-end: 15%;
+        background-color: aqua;
+    }
+
+    footer {
+
+        background-color: aqua;
+    }
+
+    footer span {
+        font-size: 20px;
+    }
+
+}
+
+/* En estas lineas estoy aprendiendo a usar las media querys para hacer responsive la pagina*/
