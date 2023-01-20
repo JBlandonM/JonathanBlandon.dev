@@ -1,6 +1,6 @@
 window.onload = async () => {
+  document.querySelector("#main-container").style["max-with"] = `${window.visualViewport["width"]}px`;
   console.log("loaded");
-  const response = await (await fetch("/works")).text();
   let buttons = document.querySelectorAll(".button-link");
   var container = document.querySelector("#sub-container");
 
@@ -8,9 +8,9 @@ window.onload = async () => {
     button.addEventListener("click", async () => {
       let target = button.textContent;
       target = target.trim().toLowerCase();
-      const view = await (await fetch(`/${target}`)).text();
+      let view = await (await fetch(`./partials/${target}.html`)).text();
+      // history.pushState({},{},"home");
       container.innerHTML = view;
-      window.location.assign("#jona");
     });
   });
 };

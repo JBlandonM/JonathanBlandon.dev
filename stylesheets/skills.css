@@ -1,6 +1,5 @@
 /* Third Page */
 #thirdPage {
-  background-color: rgba(255, 255, 255, 0.048);
   /* height: 100vh; */
   color: white;
 }
@@ -8,18 +7,18 @@
 #thirdPage h2 {
   text-align: center;
   color: white;
-  margin: 0 0;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  margin: 7px 0px;
+  /* padding-top: 20px; */
+  /* padding-bottom: 10px; */
 }
 
-#thirdPage #container {
+#thirdPage #skill-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* flex-wrap: wrap; */
-  justify-content: space-evenly;
-  /* row-gap: 20px; */
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  row-gap: 20px;
 }
 
 #thirdPage #container p {
@@ -41,9 +40,13 @@
 }
 
 .skill {
-  margin: 15px;
+  background-color: rgba(255, 255, 255, 0.048);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  animation: load 500ms;  
 }
 
-.six {
-  border-radius: 16px;
+.skill > img {
+  aspect-ratio: 1/1;
+  margin: auto auto;
 }
