@@ -68,6 +68,7 @@
   background-color: beige;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  image-rendering: optimizeSpeed;
 
   
 }
